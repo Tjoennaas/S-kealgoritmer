@@ -1,0 +1,61 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/projectSettingsUpdater.xml
+/.idea.BlazorDemoApp.iml
+/contentModel.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+# .NET / build
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio / Rider / VS Code
+.vs/
+.idea/
+*.code-workspace
+
+# Blazor/SPA
+node_modules/
+dist/
+wwwroot/dist/
+wwwroot/build/
+*.br
+*.gz
+
+# Publisering
+**/publish/
+**/Published/
+*.Publish.xml
+
+# Test/coverage
+TestResults/
+coverage/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# NuGet
+*.nupkg
+.nuget/packages/
+packages/
+project.lock.json
+
+
+søkealgoritmer.csproj
+
+
+
+søkealgoritmer.sln

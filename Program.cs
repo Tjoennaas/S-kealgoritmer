@@ -1,0 +1,121 @@
+﻿
+
+/* 
+
+int CountElements(string[] inputArray, string element){}
+   Gitt en array med strenger og elementet som skal telles,
+   itererer over listen og returner antall ganger elementet dukker opp i listen */
+
+ 
+int CountElements(string[] inputArray, string element)
+{
+    int count = 0;
+
+    for (int i = 0; i < inputArray.Length; i++)
+    {
+        if (inputArray[i] == element)
+        {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+string[] names = { "Lise", "Ole", "Lise", "Per" };
+
+int antall = CountElements(names, "Lise");
+
+
+//---------------------------------------//
+
+
+int antallElementer(string[] inputArray, string element)
+{
+    
+
+    for (int i = 0; i < inputArray.Length; i++)
+    {
+        if (inputArray[i] == element)
+        {
+            return i;
+        }
+    }
+
+return -1; //vis elementet ikke finnes
+}
+string[] arr = { "A", "B", "C", "B" };
+
+int resultat = antallElementer(arr, "B");
+
+//---------------------------------------//
+//---------------------------------------//
+
+
+
+
+T FirstElement<T>(T[] inputArray)
+{
+    if (inputArray.Length == 0)
+    {
+      throw new InvalidOperationException();
+    }
+return inputArray[0];
+}
+    string[] navn2 = { "Lise", "Ole", "Per" };
+       Console.WriteLine(FirstElement(navn2));
+
+
+T LastElement<T>(T[] inputArray)
+{
+    if (inputArray.Length == 0)
+    {
+      throw new InvalidOperationException();
+    }
+
+   //return inputArray.Length - 1; -> returnerer tallet for siste index
+   //-> returnerer selve elementet
+    return inputArray[inputArray.Length-1]; 
+}
+   
+       Console.WriteLine(LastElement(navn2));
+
+       
+
+T MidelElement<T>(T[] inputArray)
+{
+    if (inputArray.Length == 0)
+    {
+      throw new InvalidOperationException();
+    }
+
+return inputArray[inputArray.Length / 2];
+
+   }
+      Console.WriteLine(MidelElement(navn2));
+
+
+
+  //---------------------------------------//
+
+/*
+Gitt en array med int returner den midterste verdien. 
+Returner gjennomsnittet av de to midterste verdiene. */
+
+
+int GetMedian(int[] inputArray)
+{
+
+   int midelVenstre = inputArray.Length/2;
+   int midelHøyre = midelVenstre +1;
+
+double gjennomsnitt = midelVenstre + midelHøyre /2{
+   
+return   gjennomsnitt;
+
+}}
+
+
+
+
+//---------------------------------------//    
