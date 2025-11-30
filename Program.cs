@@ -1,6 +1,4 @@
-﻿
-
-/* 
+﻿/* 
 
 int CountElements(string[] inputArray, string element){}
    Gitt en array med strenger og elementet som skal telles,
@@ -99,23 +97,25 @@ return inputArray[inputArray.Length / 2];
   //---------------------------------------//
 
 /*
-Gitt en array med int returner den midterste verdien. 
-Returner gjennomsnittet av de to midterste verdiene. */
+Returner gjennomsnittet av de to midterste verdiene ved partall. */
+
 
 
 int GetMedian(int[] inputArray)
 {
 
-   int midelVenstre = inputArray.Length/2;
-   int midelHøyre = midelVenstre +1;
+   int[] arr = (int[])inputArray;
 
-double gjennomsnitt = midelVenstre + midelHøyre /2{
-   
-return   gjennomsnitt;
-
-}}
+    int length = arr.Length;
+    int mid = length / 2;
 
 
+    if (length % 2 != 0)
+    {
+        return arr[mid];
+    }
 
-
-//---------------------------------------//    
+    return (arr[mid - 1] + arr[mid]) / 2;
+}
+GetMedian(new int[] { 1, 3, 5 });       
+GetMedian(new int[] { 1, 2, 3, 4 });
