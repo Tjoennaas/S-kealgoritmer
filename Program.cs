@@ -181,6 +181,10 @@ class Program
 */
 
 
+//Fordelen med linked list er at det er enkelt å legge til ny data
+
+
+
 
 
 using System;
@@ -266,6 +270,7 @@ public class LinkedList
     }
 }
 
+//Test av koden: 
 class Program
 {
     static void Main(string[] args)
